@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+    <button class="btn" (click) = "excluirPost()">
+        <span class="glyphicon glyphicon-remove"></span>
+    </button>
+    <div class="panel-heading">{{posts.nome}}</div>
+    <div class="panel-body">
+        <div class="conteudo_postagens">
+            {{posts.publicacao}}
+        </div>
+        <button class="curtir glyphicon glyphicon-thumbs-up" (click)="onClick()">
+         {{posts.qtdCurtidas}}
+        </button>
+    </div>
+ 
+</div>

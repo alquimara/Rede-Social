@@ -1,0 +1,42 @@
+
+.panel-heading{
+    height: 40px; 
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border: none;
+    margin: 20px 0px 0px 0px;
+}
+.panel-body{
+    height: 200px;
+}
+.panel-default{
+    display: inline-block;
+    width: 20%;
+   
+   
+
+}
+.conteudo_postagens{
+    width: 100%;
+    height: 100px;
+    background-color:lavenderblush;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+
+}.curtir{
+    width: 70px;
+    height: 50px;
+    border: none;
+    margin: 10px auto auto auto;
+    font-size: 20px;
+    background-color: transparent;
+}
+.btn{
+    float: right;
+}
+
+
+
+

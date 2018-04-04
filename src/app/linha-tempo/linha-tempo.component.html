@@ -1,0 +1,11 @@
+<app-post
+    *ngFor=" let post of posts"  
+    (foiExcluido)= "postExcluido($event)"
+    (recebeuLike)= "likeRecebido($event)" 
+    (verificado) = "buscar($event)"    
+    [posts]="post"
+
+    ></app-post>
+
+
+
