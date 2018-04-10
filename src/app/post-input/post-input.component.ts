@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter, } from '@angular/core';
 import{PostService} from '../post/post.service';
 import { PostModelo } from '../post/post-modelo';
+import { post } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-post-input',
@@ -11,15 +12,16 @@ export class PostInputComponent  {
   @Output() envioPosts = new EventEmitter();
   nome: string = "";
   publicacao:string = "";
-  
+  id:number;
+  qtdCurtidas:number;
 
-  constructor(private PostService:PostService) { }
+
+  constructor(private PostService:PostService) {}
 
   adicionarPost($event){
-    event.preventDefault();
+    event.preventDefault();   
     this.envioPosts.emit(
-      new PostModelo(this.PostService.getPost()[this.PostService.getPost().length - 1].id + 1
-                    ,this.nome, this.publicacao, 0));
+      new PostModelo(this.id,this.nome, this.publicacao, this.qtdCurtidas));
   }
 
 }

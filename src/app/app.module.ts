@@ -10,6 +10,8 @@ import { routing } from './app.routing';
 import {PostService} from '../app/post/post.service';
 import { FormsModule } from '@angular/forms';
 import { PaginaInputComponent } from './pagina-input/pagina-input.component'
+import{HttpModule} from '@angular/http';
+
 
 
 
@@ -24,12 +26,14 @@ import { PaginaInputComponent } from './pagina-input/pagina-input.component'
     LinhaTempoComponent,
     PostInputComponent,
     PaginaInputComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     routing,
-    FormsModule
+    FormsModule,
+    HttpModule
 
   ],
   providers: [PostService],

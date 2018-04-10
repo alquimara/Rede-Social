@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { PostModelo } from './post-modelo';
 
+
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',

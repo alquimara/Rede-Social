@@ -18,7 +18,8 @@
       id="exampleInputPassword1"
        placeholder="Digite sua Publicação"
        [(ngModel)] = "publicacao"
-    name="input_publicacao">>
+    name="input_publicacao">
     </div>
     <button type="submit" class="btn btn-primary" (click)="adicionarPost($event)" >Adicionar</button>
+    <button type="submit" class="btn btn-primary" (click)="editarPost($event)" >Editar</button>
   </form>
